@@ -15,11 +15,12 @@
 		<input name="Submit" type="submit">
 		<br>
 		
-		
+		{% autoescape false %}
 		{% for key, value in text.items() %}
 			<h3 name="key">{{ key }}</h3>
 			<p name="value">{{ value }}</p>
 		{% endfor %}
+		{% endautoescape %}
 		
 	</body>
 
