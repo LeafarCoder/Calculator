@@ -76,7 +76,7 @@ def calculate_recursive(op_parts):
         return op_parts
 
     basicOperations = "+-*/!^"
-    legalFunctions = ['sin', 'cos', 'tan', 'arcsin', 'arctan', 'arctan', 'exp', 'log', 'ln', 'sqrt']
+    legalFunctions = ['sin', 'cos', 'tan', 'arcsin', 'arccos', 'arctan', 'exp', 'log', 'ln', 'sqrt']
 
     for i in range(len(op_parts)):
 
@@ -225,7 +225,7 @@ def calculate(text):
                         <br>Golden ratio: <b>gold</b> (1.6180339887)
                         <br>
                         <br><b>Example of valid operations:</b>
-                        <br>cos(pi/2)+exp(cot(2)*3)
+                        <br>cos(pi/2)+exp(tan(2)*3)
                         <br>-((sqrt(3)/e)-(2^3))
                         """
 
